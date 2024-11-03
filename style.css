@@ -1,6 +1,72 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 0;
+}
+
+body {
+    color: #e5e7ebe8;
+    background-image: linear-gradient(to bottom, #111827, #141b2b, #171f2e, #1b2232, #1e2636);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+    background: linear-gradient(to right, #23e49d, #60a5fa);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 0 auto; /* Pour centrer la balise p elle-même dans la page si sa largeur est fixe */
+    width: 43rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.4rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(24%) saturate(187%) hue-rotate(176deg) brightness(94%) contrast(89%); /* Couleur par défaut */
+    transition: filter 0.2s;
+}
+
+img:hover {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(95%) saturate(301%) hue-rotate(176deg) brightness(92%) contrast(88%); /* Couleur au survol */
+}
+
+i{
+    position: absolute;
+    bottom: 40px;
+}
+
+span {
+    background: linear-gradient(to right, #23e49d, #60a5fa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container a {
+    text-decoration: none;
+    color: #e5e7ebe8;
 }
