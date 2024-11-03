@@ -37,6 +37,14 @@ p {
     font-size: 1.4rem;
 }
 
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .icons{
     display: flex;
     flex-direction: row;
