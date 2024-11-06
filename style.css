@@ -12,7 +12,7 @@ background-size: cover;
 font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-h1 {
+.focus-in-contract {
     font-size: 75px;
     background: linear-gradient(to right, #23e49d, #60a5fa);
     -webkit-background-clip: text;
@@ -20,6 +20,7 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
     text-shadow: 0px 0px 84px rgba(45, 255, 196, 0.62), 0px 0px 0px rgba(0, 0, 0, 0);
+    animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 p {
@@ -38,11 +39,38 @@ font-size: 1.4rem;
 }
 
 .container2{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 100vh;
+height: 200vh;
+}
+
+.container2 h1{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    font-size: 2.8rem;
+}
+
+.container2 i {
+    position: relative;
+    top: 8px;
+    left: -2rem;
+}
+
+.container-prjt {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Trois colonnes flexibles */
+    gap: 1.5rem;
+    justify-items: center; /* Centre chaque carte individuellement dans la colonne */
+    align-items: center; 
+    margin: 5rem auto;
+    max-width: 85rem;
+    border: 5px solid red;
+}
+
+.card{
+    width: 26.5rem;
+    height: 21em;
+    border: 5px solid blue;
+    border-radius: 15px;
 }
 
 .icons{
@@ -81,7 +109,7 @@ color: #e5e7ebe8;
 
 .arrow-bounce {
 animation: bounce 2s infinite;
-font-size: 2rem; /* Ajuste la taille si nécessaire */
+font-size: 2rem;
 }
 
 @keyframes bounce {
@@ -95,9 +123,6 @@ font-size: 2rem; /* Ajuste la taille si nécessaire */
     transform: translateY(-8px);
 }
 }
-.focus-in-contract {
-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
 @keyframes focus-in-contract {
 0% {
@@ -109,7 +134,4 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     filter: blur(0px);
     opacity: 1;
 }
-}
-.container2 div{
-
 }
