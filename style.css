@@ -64,13 +64,44 @@ height: 200vh;
     margin: 5rem auto;
     max-width: 85rem;
     border: 5px solid red;
+    transition: 0.5s ease-in-out;
+    
 }
 
 .card{
-    width: 26.5rem;
-    height: 21em;
-    border: 5px solid blue;
+    width: 27rem;
+    height: 22em;
+    border: 2px solid rgb(55 65 81);
     border-radius: 15px;
+    background-color: rgb(30 40 55);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 13px; 
+}
+
+.card h2{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #d4d8e1e8;
+}
+
+.card p {
+    text-align: left;
+    margin: 1rem 20px 0rem 20px;
+    max-width: calc(100% - 40px);
+    overflow:hidden;   
+    white-space: normal;        
 }
 
 .icons{
@@ -80,14 +111,14 @@ margin-top: 25px;
 gap: 20px;
 }
 
-img {
+.icons img {
 height: 30px;
 width: 30px;
 filter: brightness(0) saturate(100%) invert(92%) sepia(24%) saturate(187%) hue-rotate(176deg) brightness(94%) contrast(89%); /* Couleur par défaut */
 transition: filter 0.2s;
 }
 
-img:hover {
+.icons img:hover {
 filter: brightness(0) saturate(100%) invert(59%) sepia(95%) saturate(301%) hue-rotate(176deg) brightness(92%) contrast(88%); /* Couleur au survol */
 }
 
