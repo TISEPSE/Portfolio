@@ -58,19 +58,19 @@ height: 200vh;
 .container-prjt {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr)); /* Trois colonnes flexibles */
-    gap: 1.5rem;
+    gap: 2rem;
     justify-items: center; /* Centre chaque carte individuellement dans la colonne */
     align-items: center; 
     margin: 5rem auto;
-    max-width: 85rem;
+    max-width: 80rem;
     border: 5px solid red;
     transition: 0.5s ease-in-out;
     
 }
 
 .card{
-    width: 27rem;
-    height: 22em;
+    width: 25rem;
+    height: 20em;
     border: 2px solid rgb(55 65 81);
     border-radius: 15px;
     background-color: rgb(30 40 55);
