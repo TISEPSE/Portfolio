@@ -15,7 +15,8 @@ font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe U
 .focus-in-contract {
     font-size: 75px;
     background: linear-gradient(to right, #23e49d, #60a5fa);
-    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text; /* Gardez cette ligne pour la compatibilité avec les anciens navigateurs */
     color: transparent;
     margin-bottom: 20px;
     text-align: center;
