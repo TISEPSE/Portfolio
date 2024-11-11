@@ -15,7 +15,6 @@ body {
 p {
     text-align: center;
     margin: 0 auto;
-    width: 75vw;
     font-size: clamp(0.8rem, 1.2vw + 0.5rem, 1.5rem); /* Taille adaptative */
 }
 
@@ -72,7 +71,7 @@ p {
 .card h2 {
     margin: 1rem 20px 0.5rem;
     font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
     color: #d4d8e1;
 }
 
@@ -88,7 +87,7 @@ p {
 }
 
 .card p {
-    font-size: clamp(0.8rem, 0.7vw + 0.5rem, 1rem);
+    font-size: clamp(0.2rem, 0.7vw + 0.5rem, 1rem);
     text-align: left;
     margin: 0rem 0px 1rem 20px;
     flex-grow: 1;
@@ -137,6 +136,93 @@ color: #e5e7ebe8;
 .arrow-bounce {
 animation: bounce 2s infinite;
 font-size: 2rem;
+
+}/* Styles pour la carte du css modal */
+.card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Styles pour la modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 25;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: rgb(30 40 55);
+    margin: 0% auto;
+    top: 15%;
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+    border: 2px solid rgb(55 65 81);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top:0px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.modal-description {
+    font-size: 16px;
+    color: #d4d8e1b2;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+
+.modal-description p{
+    width: 0vw;
+}
+
+/* Animation pour l'ouverture de la modale */
+@keyframes modalopen {
+    from {opacity: 0; transform: scale(0.8);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+.modal.show {
+    display: block;
+    animation: modalopen 0.3s;
 }
 
 @keyframes bounce {
@@ -180,9 +266,6 @@ font-size: 2rem;
         font-size: 8vw;
     }
 
-    p {
-        width: 80vw;
-    }
 }
 
 /* Ajoutez ces media queries à la fin de votre fichier CSS */
