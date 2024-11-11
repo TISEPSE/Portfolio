@@ -146,7 +146,7 @@ font-size: 2rem;
 }
 
 .focus-in-contract {
-    font-size: 8vw;
+    font-size: 9vw;
     background: linear-gradient(to right, #23e49d, #60a5fa);
     background-clip: text;
     -webkit-background-clip: text; /* Gardez cette ligne pour la compatibilité avec les anciens navigateurs */
@@ -167,4 +167,10 @@ font-size: 2rem;
     filter: blur(0px);
     opacity: 1;
 }
+}
+
+@media screen and (min-width: 767px){
+    .focus-in-contract {
+        font-size: 6vw;
+    }
 }
