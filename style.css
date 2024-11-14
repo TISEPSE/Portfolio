@@ -250,7 +250,7 @@ font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
     text-shadow: 0px 0px 84px rgba(45, 255, 196, 0.62), 0px 0px 0px rgba(0, 0, 0, 0);
-    animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes focus-in-contract {
