@@ -1,11 +1,9 @@
-
 const cards = document.querySelectorAll(".card")
 const modal = document.getElementById("projectModal")
 const modalImage = modal.querySelector(".modal-image")
 const modalTitle = modal.querySelector(".modal-title")
 const modalDescription = modal.querySelector(".modal-description")
 const closeButton = modal.querySelector(".close")
-
 
 cards.forEach(card => {
   card.addEventListener("click", () => {
