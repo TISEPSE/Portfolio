@@ -360,8 +360,13 @@ color: #e5e7ebe8;
     }
 
     p{
+        font-size: 1rem;
         font-weight: 500;
         margin: 0rem 3rem;
+    }
+
+    .container h1{
+        font-size: 2.5rem;
     }
 }
 
@@ -371,6 +376,7 @@ color: #e5e7ebe8;
     }
 
     p{
+        font-size: 0.9rem;
         font-weight: 500;
         margin: 0rem 3rem;
     }
