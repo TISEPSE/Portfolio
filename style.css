@@ -222,7 +222,7 @@ color: #e5e7ebe8;
 
 .lien-git-style{
     background-color: rgb(55 65 81);
-    margin-left: 1rem;
+    margin: 1rem 0rem 1rem 1rem;
     padding: 0.4rem 0;
     width: 8.7rem;
     border-radius: 5px;
@@ -360,7 +360,7 @@ color: #e5e7ebe8;
     }
 
     p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 500;
         margin: 0rem 3rem;
     }
