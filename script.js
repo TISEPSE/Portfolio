@@ -13,7 +13,11 @@ async function fetchGitHubRepos() {
     if (!response.ok) throw new Error('Erreur lors de la récupération des repositories');
     
     const repos = await response.json();
-    return repos.filter(repo => !repo.fork && !repo.private);
+    return repos.filter(repo => 
+      !repo.fork && 
+      !repo.private && 
+      !repo.name.toLowerCase().includes('portfolio')
+    );
   } catch (error) {
     console.error('Erreur:', error);
     return [];
